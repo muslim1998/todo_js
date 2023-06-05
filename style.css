@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+#add-task-container {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+#input-task {
+    padding-left: 10px;
+    height: 60px;
+    font-size: 30px;
+    width: 680px;
+    border: none;
+    outline: none;
+}
+
+#add-task i {
+    font-size: 40px;
+    color: rgb(7, 106, 0);
+    padding: 0px 10px;
+}
+
+.task {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    ;
+}
+
+.task li {
+    max-width: 640px;
+    font-size: 30px;
+    flex: 4;
+    list-style: none;
+    word-break: break-all;
+}
+
+.task .remove-task,
+.check-task {
+    font-size: 30px;
+}
+
+.remove-task {
+    color: rgb(196, 19, 19);
+}
+
+.check-task {
+    color: rgb(241, 161, 0);
+}
+
+@media (max-width:770px) {
+
+    .task .remove-task,
+    .check-task {
+        font-size: 25px;
+    }
+
+    #input-task {
+        height: 60px;
+        font-size: 25px;
+        width: 400px;
+    }
+
+    .task li {
+        max-width: 400px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width:500px) {
+    #input-task {
+        height: 50px;
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .task li {
+        max-width: 200px;
+        font-size: 20px;
+    }
+}
